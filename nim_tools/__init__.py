@@ -332,7 +332,8 @@ def nimplay(seed: Union[int, tuple] = None, misere: bool = False,
             if not pile:
                 pile = [i for i, p in enumerate(piles) if p > 0]
             pile = random.choice(pile)
-            remv = remv or random.randint(1, int(piles[pile]/2) + 1)
+            if not remv:
+                remv random.randint(1, int(piles[pile]/2) + 1)
             
             print(f'{alpha_index(pile)} -{remv}\n')
             yourturn = True
