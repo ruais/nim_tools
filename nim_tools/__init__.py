@@ -222,60 +222,79 @@ def nimplay(seed: Union[int, tuple] = None, misere: bool = False,
     
     Examples:
     >>> nimplay()
-    Game: 7395735979758453086 - [9, 5, 9]
+    game: 2300488424522623117 - [10, 6, 4]
     
-    9 X   X
-    8 X   X
-    7 X   X
-    6 X   X
-    5 X X X
-    4 X X X
-    3 X X X
+    10 X    
+     9 X    
+     8 X    
+     7 X    
+     6 X X  
+     5 X X  
+     4 X X X
+     3 X X X
+     2 X X X
+     1 X X X
+       A B C
+    
+    ----
+    
+    you: a -8
+    
+    6   X  
+    5   X  
+    4   X X
+    3   X X
     2 X X X
     1 X X X
       A B C
     
     ----
     
-    you: b -all
+    cpu: C -1
     
-    9 X   X
-    8 X   X
-    7 X   X
-    6 X   X
-    5 X   X
-    4 X   X
-    3 X   X
-    2 X   X
-    1 X   X
+    6   X  
+    5   X  
+    4   X  
+    3   X X
+    2 X X X
+    1 X X X
       A B C
     
     ----
     
-    cpu: A -4
+    you: b -5
     
-    9     X
-    8     X
-    7     X
-    6     X
-    5 X   X
-    4 X   X
-    3 X   X
+    3     X
     2 X   X
-    1 X   X
+    1 X X X
       A B C
     
-    ...
+    ----
     
-    cpu: A -2
+    cpu: A -1
     
+    3     X
     2     X
-    1     X
+    1 X X X
       A B C
     
     ----
     
-    you: c -2
+    you: c -all
+    
+    1 X X  
+      A B C
+    
+    ----
+    
+    cpu: B -1
+    
+    1 X    
+      A B C
+    
+    ----
+    
+    you: a -1
     
     you win!
     '''
