@@ -345,7 +345,6 @@ def nimplay(seed: Union[int, tuple] = None, misere: bool = False,
                         yourturn = False
                 
                 print(end=('\n', '     ')[yourturn])
-                continue
         else:
             remv, pile = nimwin(piles, misere)
             if not pile:
